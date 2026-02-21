@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+:root {
+    --clr-primary: #004779;
+    --clr-secondary: #005fa3;
+    --text-clear: #ffffff;
+    --text-dark: #364153;
+    --clr-buttons: #155dfc;
+    --clr-btn-hover: #364153;
+    --transition: all 0.3s ease-in-out;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "DM_Sans";
+    src: url(/assets/fonts/DM_Sans/dm-sans.ttf) format("truetype");
+    src: url(/assets/fonts/DM_Sans/dm-sans.woff) format(".woff");
+    src: url(/assets/fonts/DM_Sans/dm-sans.woff2) format(".woff2");
+    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* tipo de fuente */
+.dm-sans {
+    font-family: "DM_Sans";
+}
+
+
+
+/* color de fondo primario */
+.bg-color {
+    background-color: var(--clr-primary);
+}
+
+.bg-color--secondary {
+    background-color: var(--clr-secondary);
+}
+
+/* texto claro */
+.text-clear {
+    color: var(--text-clear);
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.btn {
+    padding: .75rem 1.25rem;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn--primary {
+    border-color: var(--clr-buttons);
+    background-color: var(--clr-buttons);
+    color: var(--text-clear);
+}
+
+.btn--secondary {
+    border-color: var(--clr-buttons);
+    color: var(--clr-buttons);
+}
+
+.btn--primary:hover {
+    background-color: var(--clr-btn-hover);
+    border-color: var(--clr-btn-hover);
+}
+
+.btn--secondary:hover {
+    border-color: var(--clr-btn-hover);
+    color: var(--clr-btn-hover);
+}
+
+.hero-bg-image {
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.clr-title {
+    color: var(--clr-primary);
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: 4.5rem;
+    width: 100%;
+    padding: 0 1.25rem;
+}
+
+.main-header a {
+    font-family: "DM_Sans";
+}
+
+.side-menu { 
+    height: 100%;
+    width: 16rem;
+    background-color: white;
+}
+
+.show-side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.dark-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+}
+
+.navbar-items {
+    padding: 0 1.25rem;
+    height: 4.5rem;
+    transition: var(--transition);
+}
+
+.navbar-items:hover {
+    background-color: var(--clr-secondary);
+}

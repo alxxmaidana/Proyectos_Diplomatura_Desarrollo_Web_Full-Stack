@@ -1,0 +1,379 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="terranova, terranova inmobiliaria, contactar terranova Inmoboliaria, contacto terrenova, contacto terranova inmobiliaria, llamar terranova inmobiliaria, telefono terranova inmobiliaria, email terranova inobiliaria">
+    <title>Formulario de Contacto - Terranova Inmobiliaria</title>
+    <link rel="icon" href="../img/icon-logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-[DM_Sans] box-border">
+    <header
+        class="h-18 bg-[#004b81] flex items-center justify-between xl:justify-around px-8 fixed top-0 left-0 w-full z-50 shadow-lg max-[360px]:px-5">
+        <!-- Botón hamburguesa (solo el mobile)-->
+        <button id="menu-btn" class="md:hidden text-white text-2xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Menú lateral -->
+        <aside id="mobile-menu"
+            class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 ease-linear z-50">
+
+            <!-- Encabezado del menú -->
+            <div class="flex items-center justify-between p-4 border-b border-gray-300">
+                <span class="font-bold text-lg text-gray-800">Menú</span>
+                <button id="close-menu" class="text-2xl text-[#004B81]">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Items del menú -->
+            <nav class="flex flex-col p-4 gap-4">
+                <a href="../index.html" class="flex items-center gap-2 text-[#004B81] font-semibold">
+                    Inicio
+                </a>
+                <a href="../alquilar/propiedades-en-alquiler.html"
+                    class="flex items-center gap-2 text-[#004B81] font-semibold">
+                    Alquileres
+                </a>
+                <a href="../comprar/propiedades-en-venta.html"
+                    class="flex items-center gap-2 text-[#004B81] font-semibold">
+                    En Venta
+                </a>
+                <a href="../nosotros/sobre-nosotros.html" class="flex items-center gap-2 text-[#004B81] font-semibold">
+                    Sobre Nosotros
+                </a>
+                <a href="../contacto/formulario-de-contacto.html"
+                    class="flex items-center gap-2 text-[#004B81] font-semibold">
+                    Contacto
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Overlay oscuro -->
+        <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+        <!--Header Logo white -->
+        <div class="max-w-36 max-sm:max-w-30">
+            <a href="../index.html">
+                <img class="w-full" src="../img/logo-white.png" alt="Logo de la agencia">
+            </a>
+        </div>
+        <!-- Header nav -->
+        <nav class="hidden md:flex">
+            <ul class="flex text-gray-200 font-bold ">
+                <li><a class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
+                        href="../index.html">Inicio</a></li>
+                <li><a class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
+                        href="../alquilar/propiedades-en-alquiler.html">Alquileres</a></li>
+                <li><a class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
+                        href="../comprar/propiedades-en-venta.html">
+                        En Venta
+                    </a>
+                </li>
+                <li><a class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
+                        href="../nosotros/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
+                        href="../contacto/formulario-de-contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- header contacto - para responsive -->
+        <div class="text-2xl text-gray-200 flex md:hidden  max-[540px]:hidden">
+            <a href="../contacto/formulario-de-contacto.html" title="Ir al formulario de contacto"><i
+                    class="fa-regular fa-message"></i></a>
+        </div>
+    </header>
+
+    <main class="mt-18 grid grid-cols-1 gap-4 bg-[#F6F8F9] px-[5%] py-8 lg:grid-cols-2 xl:px[10%] 2xl:px-[15%]">
+        <!-- Form contacto - Column 1-->
+        <form class="bg-white rounded-sm p-7 shadow-sm">
+            <section class="text-center mb-6">
+                <h1 class="text-2xl font-semibold text-[#004B81] mb-2">Contacte con nostros</h1>
+                <p class="text-base font-medium text-gray-600">¿Tenés una consulta? Completá el formulario y te
+                    respondemos en menos de 24hs.</p>
+            </section>
+
+            <!-- agendar visita -->
+            <section class="flex gap-3 flex-wrap w-full items-center mb-6 justify-between">
+                <div class="flex gap-2 items-center">
+                    <img src="../img/icon-logo.png" class="w-[55px] h-[55px] rounded-sm object-cover"
+                        alt="Equipo Terranova">
+                    <div>
+                        <strong class="font-semibold text-base text-[#004B81]">Equipo Terranova</strong>
+                        <p class="text-sm text-gray-600">Atención personalizada - Lunes a Sabado</p>
+                    </div>
+                </div>
+                <div>
+                    <button id="OpenModal" class="text-sm font-semibold text-white bg-[#0267af] px-4 py-2 rounded-sm cursor-pointer hover:bg-[#308ed1] transition-colors duration-200 ease-linear">
+                        Agendar Visita
+                    </button>
+                </div>
+            </section>
+
+            <!-- Sección Formulario -->
+            <section class="text-gray-600 font-medium w-full">
+                <!-- Nombre y telefono flex-->
+                <div class="flex gap-2 w-full my-4 md:w-[70%]">
+                    <div class="flex-1">
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text"
+                            class="w-full px-4 py-2 border-1 mt-1 border-gray-400 text-sm font-normal rounded-sm"
+                            placeholder="Tu Nombre">
+                    </div>
+                    <div class="max-w-[120px] sm:max-w-[160px]">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono"
+                            class="w-full px-4 py-2 border-1 mt-1 border-gray-400 rounded-sm  text-sm font-normal"
+                            placeholder="(Opcional)">
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="mb-4">
+                    <label for="email">Email para contactarte</label>
+                    <input type="email" id="email" placeholder="ejemplo@gmail.com"
+                        class="w-full px-4 py-2 border-1 border-gray-400 mt-1 rounded-sm text-sm font-normal">
+                </div>
+                <!-- asunto -->
+                <div class="mb-4">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" placeholder="Ej: Consulta por departamento"
+                        class="w-full py-2 px-4 border-1 border-gray-400 rounded-sm mt-1  text-sm font-normal">
+                </div>
+                <!-- Mensaje -->
+                <div class="mb-4">
+                    <label for="message">Escribí aquí tu mensaje</label>
+                    <textarea id="message" rows="6"
+                        class="w-full px-4 py-2 border-1 border-gray-400 rounded-sm mt-1 text-gray-400  text-sm font-normal">Detalle brevemente de tu consulta...</textarea>
+                </div>
+                <!-- buttons -->
+                <div class="flex justify-between gap-4 ">
+                    <!-- button sumbit -->
+                    <button id="formSubmit"
+                        class="text-white text-sm bg-[#0267af] px-6 py-3 rounded-sm cursor-pointer hover:bg-[#238dda] transiton-colors duration-200 ease-linear">
+                        Contactar
+                    </button>
+                    <button id="whatsInline"
+                        class="text-[#0267af] text-sm bg-white font-semibold py-auto px-6 border-2 border-[#0267af] rounded-sm cursor-pointer hover:text-[#238dda] hover:border-[#238dda] transition-colors duration-200 ease-linear">
+                        Enviar por WhatsApp
+                    </button>
+                </div>
+            </section>
+
+            <!-- Suscribirse -->
+            <section class="mt-6">
+                <h3 class="text-lg font-semibold text-gray-800">Suscribirse (Opcional)</h3>
+                <div class="flex items-center gap-4 max-[462px]:flex-wrap">
+                    <input id="newsletter" type="email" placeholder="Tu email para recibir novedades" class="w-full px-4 py-2 border-1 border-gray-400 mt-1 rounded-sm text-sm font-normal">
+                    <button id="sub-news" class="text-white font-semibold text-sm bg-[#0267af] px-4 py-2 rounded-sm cursor-pointer hover:bg-[#238dda] transition-colors duration-200 ease-linear">Suscribirse</button>
+                </div>
+            </section>
+        </form>
+
+        <!-- Column 2  -->
+        <section class="grid grid-rows-2 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-1">
+            <aside class="bg-white shadow-sm rounded-sm row-span-2 p-7 w-full">
+                <h2 class="text-xl font-semibold text-[#004B81] text-center mb-4">Información de Contacto</h2>
+                <ul class="flex gap-5 flex-col text-base max-sm:text-sm text-gray-700">
+                    <li class="flex">
+                        <i class="fa-solid fa-phone mr-2 text-base text-blue-600"></i>
+                        <a href="tel: +54 383 4123456" target="_blank" rel="nooper noreferrer"
+                            class="hover:text-[#2ea8ff] transition-colors duration-300 ease-linear">+54 383
+                            4123456</a>
+                    </li>
+                    <li class="flex">
+                        <i class="fa-solid fa-location-dot mr-2 text-base text-blue-600"></i>
+                        <a href="https://maps.app.goo.gl/SFL4MTzVBpwmEMSY7" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-[#2ea8ff] transition-colors duration-300 ease-linear">Av.
+                            Presidente Castillo 1639, San Fernando del Valle de
+                            Catamarca, Argentina</a>
+                    </li>
+                    <li class="flex ">
+                        <i class="fa-solid fa-envelope mr-2 text-base text-blue-600"></i>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=PNRMKgMTHLCNnlMMnRGkbhWLxmftrLQGMJTxsKpFSFPbZqqmHxgJwgvwCrKJZPcpLbWVKSRZtNJzvDq"
+                            target="_blank" rel="noopener noreferrer"
+                            class="hover:text-[#2ea8ff] transition-colors duration-300 ease-linear">info@terranovainmobiliaria.com.ar</a>
+                    </li>
+                    <li class="flex">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2 text-blue-600"></i>
+                        <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-[#2ea8ff] transition-colors duration-300 ease-linear">+54 383
+                            4654321</a>
+                    </li>
+                    <li class="flex">
+                        <i class="fa-solid fa-clock mr-2 text-blue-600 text-base"></i>
+                        <p>Horarios: De Lunes a Jueves de 8 a 18hs, Viernes a Sabado de 9 a 17hs.</p>
+                    </li>
+                </ul>
+                <iframe class="w-full max-h-[200px] mt-8"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.069330344604!2d-65.751320956162!3d-28.459436123748837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94242f4899827867%3A0xadf5a808164ea469!2sAv.%20Pres.%20Castillo%201639%2C%20K4700%20San%20Fernando%20del%20Valle%20de%20Catamarca%2C%20Catamarca!5e1!3m2!1ses-419!2sar!4v1755895124587!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </aside>
+            <!-- Preguntas Frecuentes -->
+            <aside class="bg-white shadow-sm rounded-sm p-7 w-full">
+                <h2 class="font-semibold text-xl text-gray-800 mb-4">Preguntas frecuentes:</h2>
+                <details class="text-[#004B81] text-base font-medium border-t-1 border-gray-200 py-3">
+                    <summary>¿Que documentación necesito para alquilar?</summary>
+                    <p class="text-base font-normal text-gray-600 mt-1">Se solicita DNI, recibo de sueldo o garantía
+                        propietaria. Consultanos si necesitás opciones alternativas.</p>
+                </details>
+                <details class="text-[#004B81] text-base font-medium border-t-1 border-gray-200 py-3">
+                    <summary>¿Cuánto tarda una respuesta?</summary>
+                    <p class="text-base font-normal text-gray-600 mt-1">Respondemos en 24 hs hábiles. Para urgencias
+                        usar WhatsApp.</p>
+                </details>
+                <details class="text-[#004B81] text-base font-medium border-t-1 border-gray-200 py-3">
+                    <summary>¿Puedo agendar una visita un fin de semana?</summary>
+                    <p class="text-base font-normal text-gray-600 mt-">Sí, según disponibilidad. Agendá vía el botón
+                        "Agendar visita" o por WhatsApp</p>
+                </details>
+            </aside>
+        </section>
+    </main>
+
+    <!------------- Footer ------------------->
+    <footer class="bg-[#004779] text-white pt-10 max-md:pt-5 pb-3 px-8 max-md:pb-2 max-md:px-4">
+        <div class="mx-auto w-[90%] flex flex-col gap-4 md:gap-8 md:flex-row justify-between items-start ">
+            <!-- Logo + redes -->
+            <div class="flex flex-col items-start md:w-1/3">
+                <div class="flex flex-col items-start">
+                    <a href="../index.html"><img class="w-30" src="../img/logo-white.png" alt="Logo de la agencia"
+                            title="Ir a página principal"></a>
+                    <div class="flex gap-3 mx-auto mt-2">
+                        <a href="https://www.facebook.com/TerranovaInmobiliaria" target="_blank"
+                            rel="nofollow noopener noreferrer" title="Ir a perfil de facebook de Terranova Inmobiliaria"
+                            class="hover:text-yellow-400 text-2xl"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/TerranovaInmobiliaria" target="_blank"
+                            rel="nofollow noopener noreferrer"
+                            title="Ir al perfil de instagram de Terranova Inmobiliaria"
+                            class="hover:text-yellow-400 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.x.com/TerranovaInmobiliaria" target="_blank"
+                            rel="nofollow noopener noreferrer" title="Ir a perfil de twitter de Terranova Inmobiliaria"
+                            class="hover:text-yellow-400 text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.whatsapp.com" target="_blank" rel="nofollow noopener noreferrer"
+                            title="Ir al chat de Terranova Inmobiliria" class="hover:text-yellow-400 text-2xl"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Búsquedas frecuentes -->
+            <aside class="md:w-1/3 mt-8 max-md:mt-4 md:mt-0">
+                <h4 class="text-base font-semibold underline decoration-yellow-400  mb-3 ">Búsquedas frecuentes</h4>
+                <ul class="flex flex-col gap-2 text-sm">
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors"
+                            rel="noopener noreferrer">Departamentos
+                            en alquiler</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors"
+                            rel="noopener noreferrer">Departamentos
+                            en venta</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors" rel="noopener noreferrer">Terrenos
+                            en
+                            Valle Viejo</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition-colors" rel="noopener noreferrer">Oficinas
+                            Comerciales</a></li>
+                </ul>
+            </aside>
+
+            <!-- Atajos para el usuario -->
+            <aside class="md:w-1/3 mt-8 max-md:mt-2 md:mt-0">
+                <h4 class="text-base font-semibold underline decoration-yellow-400  mb-3">Atajos</h4>
+                <ul class="flex flex-col gap-2 text-sm ">
+                    <li><a href="#" class="hover:text-yellow-400" rel="noopener noreferrer">Preguntas
+                            frecuentes(FAQ)</a></li>
+                    <li><a href="#" class="hover:text-yellow-400" rel="noopener noreferrer">Blog/Noticias
+                            Inmboliliarias</a></li>
+                    <li><a href="#" class="hover:text-yellow-400" rel="noopener noreferrer">Calculadora de
+                            Crédito
+                            Hipotecario</a></li>
+                    <li><a href="#" class="hover:text-yellow-400" rel="noopener noreferrer">Testimonio de
+                            clientes</a></li>
+                </ul>
+            </aside>
+
+            <!-- contacto info -->
+            <aside class="md:w-1/3 not-italic mt-8 max-md:mt-2 md:mt-0">
+                <h4 class="text-base font-semibold underline decoration-yellow-400  mb-2">Contacto</h4>
+                <ul class="text-sm">
+                    <li class="mb-2 flex items-center">
+                        <i class="mr-2 fa-solid fa-location-dot"></i>
+                        <a class="hover:text-yellow-400" href="https://maps.app.goo.gl/SFL4MTzVBpwmEMSY7"
+                            target="_blank" title="Ver Ubicación por GoogleMaps" rel="noopener noreferrer">
+                            Av. Presidente Castillo 1639, San Fernando del Valle
+                            de
+                            Catamarca
+                        </a>
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <i class="fa-solid fa-envelope mr-2"></i>
+                        <a class="hover:text-yellow-400"
+                            href="https://mail.google.com/mail/u/0/#inbox?compose=PNRMKgMTHLCNnlMMnRGkbhWLxmftrLQGMJTxsKpFSFPbZqqmHxgJwgvwCrKJZPcpLbWVKSRZtNJzvDq"
+                            target="_blank" title="Envianos un correo electronico"
+                            rel="noopener noreferrer">info@terravoainmobiliaria.com.ar</a>
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <i class="fa-solid fa-phone mr-2"></i>
+                        <a href="tel: +54 383 4123456" target="_blank" title="Llamanos"
+                            class="hover:text-yellow-400">+54
+                            383 4123456</a>
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <i class="fa-solid fa-clock mr-2"></i>
+                        Horarios: Lun-Jue 8-18hs, Vie-Sab 9-17hs.
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <!-- pie el footer -->
+        <footer
+            class="mx-auto w-[90%] mt-8 max-md:mt-4 border-t border-yellow-500 pt-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-200">
+            <p class="mb-2 md:mb-0">&copy; Terranova 2025 - Todos los derechos reservados</p>
+            <ul class="flex gap-4">
+                <li><a class="hover:text-yellow-400" href="#" rel="noopener noreferrer"
+                        title="Ver terminos y condiciones">Términos y Condiciones</a></li>
+                <li><a class="hover:text-yellow-400" href="#" title="Leer politicas de privacidad">Políticas de
+                        Privacidad</a></li>
+                <li><a class="hover:text-yellow-400" href="#" target="_blank" rel="noopener noreferrer"
+                        title="Ir a información del consumidor">Información al consumidor</a></li>
+            </ul>
+        </footer>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const closeBtn = document.getElementById("close-menu");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const overlay = document.getElementById("overlay");
+
+        // Abrir menú
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("-translate-x-full");
+            overlay.classList.remove("hidden");
+        });
+
+        // Cerrar menú
+        closeBtn.addEventListener("click", () => {
+            mobileMenu.classList.add("-translate-x-full");
+            overlay.classList.add("hidden");
+        });
+
+        // Cerrar al hacer click en el overlay
+        overlay.addEventListener("click", () => {
+            mobileMenu.classList.add("-translate-x-full");
+            overlay.classList.add("hidden");
+        });
+    </script>
+</body>
+
+</html>
