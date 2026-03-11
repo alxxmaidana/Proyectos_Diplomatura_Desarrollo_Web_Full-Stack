@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/***************************
+    Instalación de Fuentes
+****************************/
+
+:root {
+    /****** Colores Primarios ******/
+    --clr-primary: #0D47A1;
+    --clr-text-dark: #1e2939;
+    --clr-text-medium: #364153;
+    --clr-text-ligth: #ffffff;
+    --clr-primary-light: #0066ad;
+    --clr-primary-lighter: #b3d9ff;
+    
+    /****** Colores Secundarios ******/
+    --clr-secondary: #00a6d6;
+    --clr-accent: #e67e22;
+    
+    /****** Colores Neutros ******/
+    --clr-white: #ffffff;
+    --clr-gray-50: #f9fafb;
+    --clr-gray-100: #f3f4f6;
+    --clr-gray-200: #e5e7eb;
+    --clr-gray-300: #d1d5db;
+    --clr-gray-400: #9ca3af;
+    --clr-gray-500: #6b7280;
+    --clr-gray-600: #4b5563;
+    --clr-gray-700: #374151;
+    --clr-gray-800: #1f2937;
+    --clr-gray-900: #111827;
+    --clr-black: #000000;
+    
+    /****** Estados ******/
+    --clr-success: #27ae60;
+    --clr-warning: #f39c12;
+    --clr-error: #e74c3c;
+    --clr-info: #3498db;
+    
+    /****** Sombras ******/
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+    --transition: all 0.3s ease-in-out;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/open-sans/open-sans.eot) format("embedded-opentype");
+    src: url(../fonts/open-sans/open-sans.ttf) format("truetype");
+    src: url(../fonts/open-sans/open-sans.woff) format("woff");
+    src: url(../fonts/open-sans/open-sans.woff2) format("woff2");
+}
+
+.open-sans {
+    font-family: "Open Sans";
+}
+
+.bg-primary {
+    background-color: var(--clr-primary);
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 4.5rem;
+}
+
+.navbar-items {
+    display: flex;
+    padding: 0 1.25rem;
+    height: 4.5rem;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar-items:hover {
+    background-color: var(--clr-primary-light);
+    transition: var(--transition);
+}
+
+a {
+    font-family: "Open Sans";
+}
+
+.side-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 0;
+    z-index: 60;
+}
+
+.side-menu--show {
+    transition: var(--transition);
+    width: 80%;
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    inset: 0;
+    z-index: 55;
+}
+
+.text-dark {
+    color: var(--clr-text-dark);
+}
+
+.text-dark-medium {
+    color: var(--clr-text-medium);
+}
+
+.text-ligth {
+    color: var(--clr-text-ligth);
+}

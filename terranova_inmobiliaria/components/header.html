@@ -1,114 +1,118 @@
 <header
-  class="main-header bg-color flex items-center justify-between xl:justify-around shadow-lg max-[360px]:px-5"
+    class="main-header px-[5%] bg-primary relative flex items-center justify-between xl:justify-around shadow-lg max-[360px]:px-5"
 >
-  <!-- Botón hamburguesa (solo el mobile)-->
-  <button id="menu-btn" class="md:hidden text-white text-2xl">
-    <i class="fa-solid fa-bars"></i>
-  </button>
+    <!-- Botón hamburguesa (solo el mobile)-->
+    <button id="menu-btn" class="min-[910px]:hidden text-ligth text-2xl">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 
-  <!-- Menú lateral -->
-  <aside
-    id="mobile-menu"
-    class="hidden side-menu transition-transform duration-300 ease-lineal"
-  >
-    <!-- Encabezado del menú -->
-    <div class="flex items-center justify-between p-4 border-b border-gray-300">
-      <span class="font-bold text-lg text-gray-800">Menú</span>
-      <button id="close-menu" class="text-2xl text-[#004B81]">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
+    <!-- Menú lateral -->
+    <aside
+        id="mobile-menu"
+        class="side-menu "
+    >
+        <!-- Encabezado del menú -->
+        <div
+            class="flex items-center justify-between p-4 border-b border-gray-300"
+        >
+            <span class="font-bold text-lg text-dark">Menú</span>
+            <button id="close-menu" class="text-2xl text-dark">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Items del menú -->
+        <nav class="flex flex-col p-4 gap-4">
+            <a
+                href="../index.html"
+                class="py-4 font-semibold text-lg text-dark-medium"
+            >
+                Inicio
+            </a>
+            <a
+                href="../pages/en-alquiler.html"
+                class="py-4 font-semibold text-lg text-dark-medium"
+            >
+                Alquileres
+            </a>
+            <a
+                href="../pages/en-venta.html"
+                class="py-4 font-semibold text-lg text-dark-medium"
+            >
+                En Venta
+            </a>
+            <a
+                href="../pages/nosotros.html"
+                class="py-4 font-semibold text-lg text-dark-medium"
+            >
+                Sobre Nosotros
+            </a>
+            <a
+                href="../pages/contacto.html"
+                class="py-4 font-semibold text-lg text-dark-medium"
+            >
+                Contacto
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Overlay oscuro -->
+    <div id="overlay" class="dark-overlay hidden"></div>
+
+    <!--Header Logo white -->
+    <div class="max-w-36 max-sm:max-w-30">
+        <a href="../index.html">
+            <img
+                class="w-full"
+                src="../assets/img/logos/logo-white.png"
+                alt="Logo de la agencia"
+            />
+        </a>
     </div>
-
-    <!-- Items del menú -->
-    <nav class="flex flex-col p-4 gap-4 text-dark font-medium">
-      <a
-        href="../index.html"
-        class="flex items-center gap-2 text-[#004B81] font-semibold"
-      >
-        Inicio
-      </a>
-      <a
-        href="../pages/en-alquiler.html"
-        class="flex items-center gap-2 text-[#004B81] font-semibold"
-      >
-        Alquileres
-      </a>
-      <a
-        href="../pages/en-venta.html"
-        class="flex items-center gap-2 text-[#004B81] font-semibold"
-      >
-        En Venta
-      </a>
-      <a
-        href="../pages/nosotros.html"
-        class="flex items-center gap-2 text-[#004B81] font-semibold"
-      >
-        Sobre Nosotros
-      </a>
-      <a
-        href="../pages/contacto.html"
-        class="flex items-center gap-2 text-[#004B81] font-semibold"
-      >
-        Contacto
-      </a>
+    <!-- Header nav -->
+    <nav class="hidden min-[910px]:flex">
+        <ul class="flex">
+            <li>
+                <a
+                    class="navbar-items font-medium max-lg:px-2 text-ligth"
+                    href="../index.html"
+                    >Inicio</a
+                >
+            </li>
+            <li>
+                <a
+                    class=" navbar-items font-medium max-lg:px-2 text-ligth"  
+                    href="../pages/en-alquiler.html"
+                    >Alquileres</a
+                >
+            </li>
+            <li>
+                <a
+                    class="navbar-items font-medium max-lg:px-2 text-ligth"
+                    href="../pages/en-venta.html"
+                    >En Venta</a
+                >
+            </li>
+            <li>
+                <a
+                    class="navbar-items font-medium max-lg:px-2 text-ligth"
+                    href="../pages/nosotros.html"
+                    >Sobre Nosotros</a
+                >
+            </li>
+            <li>
+                <a
+                    class="navbar-items font-medium max-lg:px-2 text-ligth"
+                    href="../pages/contacto.html"
+                    >Contacto</a
+                >
+            </li>
+        </ul>
     </nav>
-  </aside>
-
-  <!-- Overlay oscuro -->
-  <div id="overlay" class="dark-overlay hidden"></div>
-
-  <!--Header Logo white -->
-  <div class="max-w-36 max-sm:max-w-30">
-    <a href="index.html">
-      <img class="w-full" src="../assets/img/logos/logo-white.png" alt="Logo de la agencia" />
-    </a>
-  </div>
-  <!-- Header nav -->
-  <nav class="hidden md:flex">
-    <ul class="flex text-gray-200 text-clear font-medium">
-      <li>
-        <a
-          class="flex items-center navbar-items text-clear font-medium max-lg:px-2"
-          href="../index.html"
-          >Inicio</a
-        >
-      </li>
-      <li>
-        <a
-          class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
-          href="../pages/en-alquiler.html"
-          >Alquileres</a
-        >
-      </li>
-      <li>
-        <a
-          class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
-          href="../pages/en-venta.html"
-          >En Venta</a
-        >
-      </li>
-      <li>
-        <a
-          class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
-          href="../pages/nosotros.html"
-          >Sobre Nosotros</a
-        >
-      </li>
-      <li>
-        <a
-          class="flex items-center transition-colors duration-300 ease-in-out-in-out hover:bg-[#005fa3] px-5 h-18 max-lg:px-2"
-          href="../pages/contacto.html"
-          >Contacto</a
-        >
-      </li>
-    </ul>
-  </nav>
-  <!-- header contacto (mobile) -->
-  <div class="text-2xl text-gray-200 flex md:hidden max-[540px]:hidden">
-    <a
-      href="../pages/contacto.html"
-      title="Contactanos"
-      ><i class="fa-regular fa-message"></i
-    ></a>
-  </div>
+    <!-- header contacto (mobile) -->
+    <div class="text-2xl text-ligth flex min-[910px]:hidden max-[540px]:hidden">
+        <a href="../pages/contacto.html" title="Contactanos"
+            ><i class="fa-regular fa-message"></i
+        ></a>
+    </div>
 </header>
